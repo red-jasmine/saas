@@ -9,12 +9,13 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^8.2",
+        "php": "^8.3",
         "inertiajs/inertia-laravel": "^2.0",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
         "stancl/tenancy": "^3.9",
-        "tightenco/ziggy": "^2.4"
+        "tightenco/ziggy": "^2.4",
+        "red-jasmine/region": "1.0.x-dev"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -82,6 +83,15 @@
             "php-http/discovery": true
         }
     },
-    "minimum-stability": "stable",
-    "prefer-stable": true
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../red-jasmine/framework/packages/*",
+            "options": {
+                "symlink": true
+            }
+        }
+    ]
 }
