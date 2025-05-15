@@ -36,6 +36,10 @@ Route::prefix('api')->middleware([
     PreventAccessFromCentralDomains::class,
 ])->group(function () {
     \RedJasmine\Region\UI\Http\RegionRoute::api();
+    \RedJasmine\User\UI\Http\User\UserRoute::api();
+
+
+
     Route::get('/', function () {
         return tenant();
     });

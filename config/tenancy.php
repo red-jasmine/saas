@@ -18,7 +18,7 @@ return [
      */
     'central_domains' => [
         '127.0.0.1',
-        'localhost',
+        'saas.localhost',
         'saas.test'
     ],
 
@@ -188,7 +188,8 @@ return [
         '--force' => true, // This needs to be true to run migrations in production.
         '--path' => [
             database_path('migrations/tenant'),
-            // base_path('vendor/red-jasmine/region/database/migrations'),
+            base_path('vendor/red-jasmine/user/database/migrations'),
+            base_path('vendor/red-jasmine/captcha/database/migrations'),
         ],
         '--realpath' => true,
     ],
