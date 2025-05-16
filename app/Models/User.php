@@ -3,25 +3,20 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Filament\Models\Contracts\FilamentUser;
+use Filament\Models\Contracts\HasName;
+use Filament\Panel;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use RedJasmine\Support\Contracts\UserInterface;
 
-class User extends Authenticatable
+class User extends \RedJasmine\User\Domain\Models\User implements HasName,UserInterface,FilamentUser
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var list<string>
-     */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
+
 
     /**
      * The attributes that should be hidden for serialization.
@@ -33,16 +28,36 @@ class User extends Authenticatable
         'remember_token',
     ];
 
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
-    protected function casts(): array
+
+
+    public function canAccessPanel(Panel $panel) : bool
     {
-        return [
-            'email_verified_at' => 'datetime',
-            'password' => 'hashed',
-        ];
+        return  true;
     }
+
+    public function getFilamentName() : string
+    {
+        return  $this->username;
+    }
+
+    public function getType() : string
+    {
+        return 'user';
+    }
+
+    public function getID() : string
+    {
+        return $this->getKey();
+    }
+
+    public function getNickname() : ?string
+    {
+        return $this->nickname;
+    }
+
+    public function getAvatar() : ?string
+    {
+        return  $this->avatar;
+    }
+
 }

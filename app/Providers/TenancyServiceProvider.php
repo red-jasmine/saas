@@ -8,6 +8,7 @@ use App\Models\ModelCentralObserver;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
+use Livewire\Livewire;
 use RedJasmine\Region\Domain\Models\Region;
 use Stancl\JobPipeline\JobPipeline;
 use Stancl\Tenancy\Events;
@@ -19,6 +20,7 @@ class TenancyServiceProvider extends ServiceProvider
 {
     // By default, no namespace is used to support the callable array syntax.
     public static string $controllerNamespace = '';
+
 
     public function events()
     {
@@ -105,6 +107,16 @@ class TenancyServiceProvider extends ServiceProvider
         $this->mapRoutes();
 
         $this->makeTenancyMiddlewareHighestPriority();
+
+
+        Livewire::setUpdateRoute(function ($handle){
+            return Route::post('/livewire/update',$handle)
+
+                        ->middleware([
+                            'web','universal',
+                            Middleware\InitializeTenancyByDomainOrSubdomain::class,
+                        ]);
+        });
 
 
         $centralModels = [

@@ -10,4 +10,9 @@ class Tenant extends \Stancl\Tenancy\Database\Models\Tenant implements TenantWit
 {
 
     use HasDatabase, HasDomains;
+
+    public function getIncrementing()
+    {
+       return true;
+    }
 }
