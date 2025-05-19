@@ -192,6 +192,7 @@ return [
             base_path('vendor/red-jasmine/captcha/database/migrations'),
             base_path('vendor/red-jasmine/product/database/migrations'),
             base_path('vendor/red-jasmine/order/database/migrations'),
+            base_path('vendor/red-jasmine/card/database/migrations'),
         ],
         '--realpath' => true,
     ],

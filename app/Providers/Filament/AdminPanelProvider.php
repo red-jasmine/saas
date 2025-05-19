@@ -22,6 +22,7 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Support\Str;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use RedJasmine\FilamentCard\FilamentCardPlugin;
 use RedJasmine\FilamentOrder\FilamentOrderPlugin;
 use RedJasmine\FilamentProduct\FilamentProductPlugin;
 use RedJasmine\FilamentUser\FilamentUserPlugin;
@@ -95,6 +96,7 @@ class AdminPanelProvider extends PanelProvider
                 FilamentUserPlugin::make(),
                 FilamentProductPlugin::make(),
                 FilamentOrderPlugin::make(),
+                FilamentCardPlugin::make(),
 
 
             ]);

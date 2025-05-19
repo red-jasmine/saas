@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d1f9b71dc974e7a9ff1e068e45881cdd",
+    "content-hash": "fc5b848447a21bf9001fedc30a246cf7",
     "packages": [
         {
             "name": "amphp/amp",
@@ -7896,6 +7896,66 @@
             }
         },
         {
+            "name": "red-jasmine/card",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../../red-jasmine/framework/packages/card",
+                "reference": "0461e75a4155fab98af18b55b2c2786b2636b894"
+            },
+            "require": {
+                "red-jasmine/support": "1.0.x-dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "RedJasmine\\Card\\CardServicePackageProvider",
+                        "RedJasmine\\Card\\Application\\CardServiceApplicationProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev",
+                    "dev-main": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RedJasmine\\Card\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "RedJasmine\\Card\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php vendor/bin/testbench package:discover --ansi"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "liushoukun",
+                    "email": "liushoukun66@gmail.com",
+                    "homepage": "https://github.com/liushoukun66"
+                }
+            ],
+            "description": "卡密",
+            "homepage": "https://github.com/red-jasmine/captcha",
+            "keywords": [
+                "Card",
+                "Laravel"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "red-jasmine/ecommerce",
             "version": "dev-master",
             "dist": {
@@ -7945,6 +8005,82 @@
                 "Ecommerce",
                 "Laravel"
             ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "red-jasmine/filament-card",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../../red-jasmine/framework/packages/filament-card",
+                "reference": "47947c8c2cc7cccf0e2731187657daec1f3fcd10"
+            },
+            "require": {
+                "red-jasmine/card": "1.0.x-dev",
+                "red-jasmine/filament-core": "1.0.x-dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "RedJasmine\\FilamentCard\\FilamentCardServiceProvider"
+                    ],
+                    "aliases": {
+                        "FilamentCard": "RedJasmine\\FilamentCard\\Facades\\FilamentCard"
+                    }
+                },
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev",
+                    "dev-main": "1.0.x-dev",
+                    "dev-develop": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RedJasmine\\FilamentCard\\": "src/",
+                    "RedJasmine\\FilamentCard\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "RedJasmine\\FilamentCard\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php ./vendor/bin/testbench package:discover --ansi"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "liushoukun",
+                    "email": "liushoukun66@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This is my package filament-card",
+            "homepage": "https://github.com/red-jasmine/filament-card",
+            "keywords": [
+                "filament-card",
+                "laravel",
+                "red-jasmine"
+            ],
+            "support": {
+                "issues": "https://github.com/red-jasmine/filament-card/issues",
+                "source": "https://github.com/red-jasmine/filament-card"
+            },
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -15272,6 +15408,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "red-jasmine/card": 20,
+        "red-jasmine/filament-card": 20,
         "red-jasmine/filament-order": 20,
         "red-jasmine/filament-product": 20,
         "red-jasmine/filament-user": 20,
