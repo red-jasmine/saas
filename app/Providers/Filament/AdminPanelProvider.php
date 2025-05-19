@@ -2,8 +2,10 @@
 
 namespace App\Providers\Filament;
 
-use Filament\Http\Middleware\Authenticate;
+
+use BezhanSalleh\FilamentShield\Facades\FilamentShield;
 use BezhanSalleh\FilamentShield\FilamentShieldPlugin;
+use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\AuthenticateSession;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
@@ -18,16 +20,29 @@ use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
+use Illuminate\Support\Str;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use RedJasmine\FilamentUser\FilamentUserPlugin;
 use Stancl\Tenancy\Middleware\InitializeTenancyByDomainOrSubdomain;
 use Stancl\Tenancy\Middleware\PreventAccessFromCentralDomains;
 
+
 class AdminPanelProvider extends PanelProvider
 {
 
 
-    public function panel(Panel $panel): Panel
+    public function boot() : void
+    {
+        FilamentShield::configurePermissionIdentifierUsing(function ($resource) {
+
+            return Str::of($resource::getModel())
+                      ->toString();
+
+        });
+
+    }
+
+    public function panel(Panel $panel) : Panel
     {
         return $panel
             ->default()
@@ -61,10 +76,9 @@ class AdminPanelProvider extends PanelProvider
                 DispatchServingFilamentEvent::class,
             ])
             ->middleware([
-
                 InitializeTenancyByDomainOrSubdomain::class,
                 PreventAccessFromCentralDomains::class,
-            ],isPersistent: true)
+            ], isPersistent: true)
             ->authMiddleware([
                 Authenticate::class,
             ])
@@ -77,9 +91,6 @@ class AdminPanelProvider extends PanelProvider
             ->plugins([
                 FilamentShieldPlugin::make(),
                 FilamentUserPlugin::make()
-
             ]);
-
-            ;
     }
 }

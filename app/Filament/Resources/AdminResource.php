@@ -5,6 +5,7 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\AdminResource\Pages;
 use App\Models\Admin;
 use Filament\Forms\Components\Placeholder;
+use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -34,20 +35,25 @@ class AdminResource extends Resource
     {
         return $form
             ->schema([
-                      TextInput::make('email')
-                               ->required(),
-                      TextInput::make('name')
-                               ->required(),
-                      TextInput::make('password')
-                               ->required(),
+                TextInput::make('email')
+                         ->required(),
+                TextInput::make('name')
+                         ->required(),
+                TextInput::make('password')
+                         ->required(),
+                Select::make('roles')
+                      ->relationship('roles', 'name')
+                      ->multiple()
+                      ->preload()
+                      ->searchable()
+                ,
+                Placeholder::make('created_at')
+                           ->label('Created Date')
+                           ->content(fn(?Admin $record) : string => $record?->created_at?->diffForHumans() ?? '-'),
 
-                      Placeholder::make('created_at')
-                                 ->label('Created Date')
-                                 ->content(fn(?Admin $record) : string => $record?->created_at?->diffForHumans() ?? '-'),
-
-                      Placeholder::make('updated_at')
-                                 ->label('Last Modified Date')
-                                 ->content(fn(?Admin $record) : string => $record?->updated_at?->diffForHumans() ?? '-'),
+                Placeholder::make('updated_at')
+                           ->label('Last Modified Date')
+                           ->content(fn(?Admin $record) : string => $record?->updated_at?->diffForHumans() ?? '-'),
             ]);
     }
 
@@ -61,6 +67,8 @@ class AdminResource extends Resource
                 TextColumn::make('name')
                           ->searchable()
                           ->sortable(),
+
+
             ])
             ->filters([
                 TrashedFilter::make(),
