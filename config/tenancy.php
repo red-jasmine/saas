@@ -193,6 +193,8 @@ return [
             base_path('vendor/red-jasmine/product/database/migrations'),
             base_path('vendor/red-jasmine/order/database/migrations'),
             base_path('vendor/red-jasmine/card/database/migrations'),
+            base_path('vendor/red-jasmine/community/database/migrations'),
+            base_path('vendor/red-jasmine/article/database/migrations'),
         ],
         '--realpath' => true,
     ],

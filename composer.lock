@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fc5b848447a21bf9001fedc30a246cf7",
+    "content-hash": "b085321b77d9a5f883f5f80646e3f685",
     "packages": [
         {
             "name": "amphp/amp",
@@ -3517,16 +3517,16 @@
         },
         {
             "name": "kirschbaum-development/eloquent-power-joins",
-            "version": "4.2.3",
+            "version": "4.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kirschbaum-development/eloquent-power-joins.git",
-                "reference": "d04e06b12e5e7864c303b8a8c6045bfcd4e2c641"
+                "reference": "4a8012cef7abed8ac3633a180c69138a228b6c4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kirschbaum-development/eloquent-power-joins/zipball/d04e06b12e5e7864c303b8a8c6045bfcd4e2c641",
-                "reference": "d04e06b12e5e7864c303b8a8c6045bfcd4e2c641",
+                "url": "https://api.github.com/repos/kirschbaum-development/eloquent-power-joins/zipball/4a8012cef7abed8ac3633a180c69138a228b6c4c",
+                "reference": "4a8012cef7abed8ac3633a180c69138a228b6c4c",
                 "shasum": ""
             },
             "require": {
@@ -3574,9 +3574,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kirschbaum-development/eloquent-power-joins/issues",
-                "source": "https://github.com/kirschbaum-development/eloquent-power-joins/tree/4.2.3"
+                "source": "https://github.com/kirschbaum-development/eloquent-power-joins/tree/4.2.4"
             },
-            "time": "2025-04-01T14:41:56+00:00"
+            "time": "2025-05-19T14:14:41+00:00"
         },
         {
             "name": "laravel/framework",
@@ -7832,12 +7832,89 @@
             "time": "2024-04-27T21:32:50+00:00"
         },
         {
+            "name": "red-jasmine/article",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../../red-jasmine/framework/packages/article",
+                "reference": "fba0c9419ba6e2bc5b61dfd732f2031719ad6a92"
+            },
+            "require": {
+                "red-jasmine/interaction": "^1.0.x-dev",
+                "red-jasmine/support": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "RedJasmine\\Article\\ArticlePackageServiceProvider",
+                        "RedJasmine\\Article\\Domain\\ArticleDomainServiceProvider",
+                        "RedJasmine\\Article\\Application\\ArticleApplicationServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev",
+                    "dev-main": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RedJasmine\\Article\\": "src/",
+                    "RedJasmine\\Article\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": []
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@composer run prepare"
+                ],
+                "prepare": [
+                    "@php vendor/bin/testbench package:discover --ansi"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "liushoukun",
+                    "email": "liushoukun66@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This is my package article",
+            "homepage": "https://github.com/red-jasmine/article",
+            "keywords": [
+                "article",
+                "article",
+                "laravel"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "red-jasmine/captcha",
             "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/captcha",
-                "reference": "c8c1321e66cb27f20aab659b1a1905ef2ece83b4"
+                "reference": "2a99440526cabd8f57e3d628fff2b44f412ea018"
             },
             "require": {
                 "overtrue/laravel-easy-sms": "^2.1",
@@ -7956,6 +8033,83 @@
             }
         },
         {
+            "name": "red-jasmine/community",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../../red-jasmine/framework/packages/community",
+                "reference": "128e236b137b44a2a26780eaaa579ce3271fe55d"
+            },
+            "require": {
+                "red-jasmine/interaction": "^1.0.x-dev",
+                "red-jasmine/support": "^1.0.x-dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "RedJasmine\\Community\\CommunityPackageServiceProvider",
+                        "RedJasmine\\Community\\Domain\\CommunityDomainServiceProvider",
+                        "RedJasmine\\Community\\Application\\CommunityApplicationServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev",
+                    "dev-main": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RedJasmine\\Community\\": "src/",
+                    "RedJasmine\\Community\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": []
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@composer run prepare"
+                ],
+                "prepare": [
+                    "@php vendor/bin/testbench package:discover --ansi"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "liushoukun",
+                    "email": "liushoukun66@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "community",
+            "homepage": "https://github.com/red-jasmine/community",
+            "keywords": [
+                "community",
+                "laravel",
+                "red-jasemine"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "red-jasmine/ecommerce",
             "version": "dev-master",
             "dist": {
@@ -8005,6 +8159,84 @@
                 "Ecommerce",
                 "Laravel"
             ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "red-jasmine/filament-article",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../../red-jasmine/framework/packages/filament-article",
+                "reference": "02f346b9a4497c28e0fc76f6be1c28c1491166d5"
+            },
+            "require": {
+                "red-jasmine/article": "1.0.x-dev",
+                "red-jasmine/filament-core": "1.0.x-dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "RedJasmine\\FilamentArticle\\FilamentArticleServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev",
+                    "dev-main": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RedJasmine\\FilamentArticle\\": "src/",
+                    "RedJasmine\\FilamentArticle\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "RedJasmine\\FilamentArticle\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php ./vendor/bin/testbench package:discover --ansi"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "liushoukun",
+                    "email": "liushoukun66@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This is my package filament-article",
+            "homepage": "https://github.com/red-jasmine/filament-article",
+            "keywords": [
+                "filament-article",
+                "laravel",
+                "red-jasmine"
+            ],
+            "support": {
+                "issues": "https://github.com/red-jasmine/filament-article/issues",
+                "source": "https://github.com/red-jasmine/filament-article"
+            },
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -8080,6 +8312,84 @@
             "support": {
                 "issues": "https://github.com/red-jasmine/filament-card/issues",
                 "source": "https://github.com/red-jasmine/filament-card"
+            },
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "red-jasmine/filament-community",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../../red-jasmine/framework/packages/filament-community",
+                "reference": "9442fbd78a3b4571b225876ea632b0e91204c29d"
+            },
+            "require": {
+                "red-jasmine/community": "1.0.x-dev",
+                "red-jasmine/filament-core": "1.0.x-dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "RedJasmine\\FilamentCommunity\\FilamentCommunityServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev",
+                    "dev-main": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RedJasmine\\FilamentCommunity\\": "src/",
+                    "RedJasmine\\FilamentCommunity\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "RedJasmine\\FilamentCommunity\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php ./vendor/bin/testbench package:discover --ansi"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "liushoukun",
+                    "email": "liushoukun66@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This is my package filament-community",
+            "homepage": "https://github.com/red-jasmine/filament-community",
+            "keywords": [
+                "filament-community",
+                "laravel",
+                "red-jasmine"
+            ],
+            "support": {
+                "issues": "https://github.com/red-jasmine/filament-community/issues",
+                "source": "https://github.com/red-jasmine/filament-community"
             },
             "transport-options": {
                 "symlink": true,
@@ -8333,7 +8643,7 @@
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/filament-user",
-                "reference": "c34c96beb743da38b30f329793db88c0f64704ba"
+                "reference": "a46c7995777dd2e4d0f05d3fdc5e38a8a20b8cec"
             },
             "require": {
                 "red-jasmine/filament-core": "1.0.x-dev",
@@ -8401,6 +8711,82 @@
                 "issues": "https://github.com/red-jasmine/filament-user/issues",
                 "source": "https://github.com/red-jasmine/filament-user"
             },
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "red-jasmine/interaction",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../../red-jasmine/framework/packages/interaction",
+                "reference": "573208676334fdd942eff203f63a18a0168fc02e"
+            },
+            "require": {
+                "red-jasmine/support": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "RedJasmine\\Interaction\\InteractionPackageServiceProvider",
+                        "RedJasmine\\Interaction\\Domain\\InteractionDomainServiceProvider",
+                        "RedJasmine\\Interaction\\Application\\InteractionApplicationServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev",
+                    "dev-main": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RedJasmine\\Interaction\\": "src/",
+                    "RedJasmine\\Interaction\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": []
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@composer run prepare"
+                ],
+                "prepare": [
+                    "@php vendor/bin/testbench package:discover --ansi"
+                ],
+                "analyse": [
+                    "vendor/bin/phpstan analyse"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ],
+                "format": [
+                    "vendor/bin/pint"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "liushoukun",
+                    "email": "liushoukun66@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "interaction",
+            "homepage": "https://github.com/red-jasmine/interaction",
+            "keywords": [
+                "interaction",
+                "laravel",
+                "red-jasmine"
+            ],
             "transport-options": {
                 "symlink": true,
                 "relative": true
@@ -15408,20 +15794,22 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "red-jasmine/card": 20,
-        "red-jasmine/filament-card": 20,
-        "red-jasmine/filament-order": 20,
-        "red-jasmine/filament-product": 20,
         "red-jasmine/filament-user": 20,
-        "red-jasmine/region": 20,
+        "red-jasmine/filament-product": 20,
+        "red-jasmine/filament-order": 20,
+        "red-jasmine/filament-card": 20,
+        "red-jasmine/filament-community": 20,
+        "red-jasmine/filament-article": 20,
         "red-jasmine/shopping": 20,
-        "red-jasmine/user": 20
+        "red-jasmine/region": 20,
+        "red-jasmine/user": 20,
+        "red-jasmine/card": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^8.3"
     },
-    "platform-dev": {},
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
