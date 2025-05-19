@@ -22,6 +22,8 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\Support\Str;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use RedJasmine\FilamentOrder\FilamentOrderPlugin;
+use RedJasmine\FilamentProduct\FilamentProductPlugin;
 use RedJasmine\FilamentUser\FilamentUserPlugin;
 use Stancl\Tenancy\Middleware\InitializeTenancyByDomainOrSubdomain;
 use Stancl\Tenancy\Middleware\PreventAccessFromCentralDomains;
@@ -90,7 +92,11 @@ class AdminPanelProvider extends PanelProvider
             ->profile()
             ->plugins([
                 FilamentShieldPlugin::make(),
-                FilamentUserPlugin::make()
+                FilamentUserPlugin::make(),
+                FilamentProductPlugin::make(),
+                FilamentOrderPlugin::make(),
+
+
             ]);
     }
 }

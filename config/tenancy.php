@@ -190,6 +190,8 @@ return [
             database_path('migrations/tenant'),
             base_path('vendor/red-jasmine/user/database/migrations'),
             base_path('vendor/red-jasmine/captcha/database/migrations'),
+            base_path('vendor/red-jasmine/product/database/migrations'),
+            base_path('vendor/red-jasmine/order/database/migrations'),
         ],
         '--realpath' => true,
     ],
