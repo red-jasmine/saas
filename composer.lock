@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "69531f37ed3756ca9104fa8eab412435",
+    "content-hash": "4e92f8764621194e8de50a8a076569f8",
     "packages": [
         {
             "name": "amphp/amp",
@@ -8243,6 +8243,78 @@
             }
         },
         {
+            "name": "red-jasmine/filament-admin",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../../red-jasmine/framework/packages/filament-admin",
+                "reference": "28ef4dbd0c818874d10d1703df84c15348ecabdc"
+            },
+            "require": {
+                "red-jasmine/admin": "1.0.x-dev",
+                "red-jasmine/filament-core": "1.0.x-dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "RedJasmine\\FilamentAdmin\\FilamentAdminServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev",
+                    "dev-main": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RedJasmine\\FilamentAdmin\\": "src/",
+                    "RedJasmine\\FilamentAdmin\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "RedJasmine\\FilamentAdmin\\Tests\\": "tests/"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php ./vendor/bin/testbench package:discover --ansi"
+                ],
+                "test": [
+                    "vendor/bin/pest"
+                ],
+                "test-coverage": [
+                    "vendor/bin/pest --coverage"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "liushoukun",
+                    "email": "liushoukun66@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This is my package filament-admin",
+            "homepage": "https://github.com/red-jasmine/filament-admin",
+            "keywords": [
+                "filament-admin",
+                "laravel",
+                "red-jasmine"
+            ],
+            "support": {
+                "issues": "https://github.com/red-jasmine/filament-admin/issues",
+                "source": "https://github.com/red-jasmine/filament-admin"
+            },
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "red-jasmine/filament-article",
             "version": "dev-master",
             "dist": {
@@ -15874,6 +15946,7 @@
     "stability-flags": {
         "red-jasmine/admin": 20,
         "red-jasmine/card": 20,
+        "red-jasmine/filament-admin": 20,
         "red-jasmine/filament-article": 20,
         "red-jasmine/filament-card": 20,
         "red-jasmine/filament-community": 20,
