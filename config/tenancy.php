@@ -188,6 +188,7 @@ return [
         '--force'    => true, // This needs to be true to run migrations in production.
         '--path'     => [
             database_path('migrations/tenant'),
+            base_path('vendor/red-jasmine/admin/database/migrations'),
             base_path('vendor/red-jasmine/user/database/migrations'),
             base_path('vendor/red-jasmine/captcha/database/migrations'),
             base_path('vendor/red-jasmine/product/database/migrations'),

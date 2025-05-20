@@ -18,7 +18,7 @@ return [
 
 
     'auth_provider_model' => [
-        'fqcn' => 'App\\Models\\Admin',
+        'fqcn' => 'RedJasmine\\Admin\\Domain\\Models\Admin',
     ],
 
     'super_admin' => [

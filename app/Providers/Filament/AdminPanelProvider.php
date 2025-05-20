@@ -53,8 +53,7 @@ class AdminPanelProvider extends PanelProvider
             ->default()
             ->id('admin')
             ->path('admin')
-            ->login()
-            //->login(Login::class)
+            ->login(Login::class)
             ->colors([
                 'primary' => Color::Amber,
             ])
@@ -81,8 +80,9 @@ class AdminPanelProvider extends PanelProvider
                 DispatchServingFilamentEvent::class,
             ])
             ->middleware([
+                'universal',
                 InitializeTenancyByDomainOrSubdomain::class,
-                PreventAccessFromCentralDomains::class,
+                //PreventAccessFromCentralDomains::class,
             ], isPersistent: true)
             ->authMiddleware([
                 Authenticate::class,

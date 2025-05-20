@@ -2,10 +2,11 @@
 
 namespace App\Console\Commands;
 
-use App\Models\Admin;
+
 use App\Models\Tenant;
 use Illuminate\Console\Command;
-use RedJasmine\User\Domain\Models\User;
+use RedJasmine\Admin\Domain\Models\Admin;
+
 
 class Test extends Command
 {
@@ -28,8 +29,15 @@ class Test extends Command
      */
     public function handle()
     {
-        //
 
+
+        //
+        Admin::create([
+            'email'=>'admin@qq.com',
+            'name'=>'super_admin',
+            'password'=>'123456'
+        ]);
+        return;
 
         $tenant = Tenant::find(1);
         $tenant->run(function () {

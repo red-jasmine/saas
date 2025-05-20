@@ -22,6 +22,7 @@
         "red-jasmine/region": "1.0.x-dev",
         "red-jasmine/user": "1.0.x-dev",
         "red-jasmine/card": "1.0.x-dev",
+        "red-jasmine/admin": "1.0.x-dev",
         "stancl/tenancy": "^3.9",
         "tightenco/ziggy": "^2.4"
     },
