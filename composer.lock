@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c72c7dde866f8aeb1417792b7ab7925b",
+    "content-hash": "d877b96080d9f72615ceec53a664dac8",
     "packages": [
         {
             "name": "amphp/amp",
@@ -8328,9 +8328,10 @@
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/filament-admin",
-                "reference": "28ef4dbd0c818874d10d1703df84c15348ecabdc"
+                "reference": "faf2d792e45604798d2498eda5ad0e33643751c2"
             },
             "require": {
+                "bezhansalleh/filament-shield": "^3.3",
                 "red-jasmine/admin": "1.0.x-dev",
                 "red-jasmine/filament-core": "1.0.x-dev"
             },

@@ -7,7 +7,6 @@
     "license": "MIT",
     "require": {
         "php": "^8.3",
-        "bezhansalleh/filament-shield": "^3.3",
         "filament/filament": "3.3",
         "inertiajs/inertia-laravel": "^2.0",
         "lara-zeus/quantity": "^1.0",
