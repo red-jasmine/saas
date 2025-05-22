@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d877b96080d9f72615ceec53a664dac8",
+    "content-hash": "98e1c0d11dcacd4ce1c08ffd85c40d81",
     "packages": [
         {
             "name": "amphp/amp",
@@ -7913,11 +7913,11 @@
         },
         {
             "name": "red-jasmine/admin",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/admin",
-                "reference": "21db37461a7484984466203dbc39283586cf937e"
+                "reference": "1f48a37dc7891f17325d23e0cccdbd1e8d86fc22"
             },
             "require": {
                 "red-jasmine/support": "1.0.x-dev",
@@ -7991,7 +7991,7 @@
         },
         {
             "name": "red-jasmine/article",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/article",
@@ -8068,11 +8068,11 @@
         },
         {
             "name": "red-jasmine/captcha",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/captcha",
-                "reference": "c8c1321e66cb27f20aab659b1a1905ef2ece83b4"
+                "reference": "2a99440526cabd8f57e3d628fff2b44f412ea018"
             },
             "require": {
                 "overtrue/laravel-easy-sms": "^2.1",
@@ -8132,7 +8132,7 @@
         },
         {
             "name": "red-jasmine/card",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/card",
@@ -8192,7 +8192,7 @@
         },
         {
             "name": "red-jasmine/community",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/community",
@@ -8269,7 +8269,7 @@
         },
         {
             "name": "red-jasmine/ecommerce",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/ecommerce",
@@ -8324,11 +8324,11 @@
         },
         {
             "name": "red-jasmine/filament-admin",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/filament-admin",
-                "reference": "faf2d792e45604798d2498eda5ad0e33643751c2"
+                "reference": "8de271ad6b169c0fa15ec1e79db9c5faee2d12d2"
             },
             "require": {
                 "bezhansalleh/filament-shield": "^3.3",
@@ -8397,7 +8397,7 @@
         },
         {
             "name": "red-jasmine/filament-article",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/filament-article",
@@ -8475,7 +8475,7 @@
         },
         {
             "name": "red-jasmine/filament-card",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/filament-card",
@@ -8551,11 +8551,11 @@
         },
         {
             "name": "red-jasmine/filament-community",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/filament-community",
-                "reference": "3b13bc9466dba8cf0786ad2014ffb4ad8de24499"
+                "reference": "9442fbd78a3b4571b225876ea632b0e91204c29d"
             },
             "require": {
                 "red-jasmine/community": "1.0.x-dev",
@@ -8629,7 +8629,7 @@
         },
         {
             "name": "red-jasmine/filament-core",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/filament-core",
@@ -8717,7 +8717,7 @@
         },
         {
             "name": "red-jasmine/filament-order",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/filament-order",
@@ -8798,7 +8798,7 @@
         },
         {
             "name": "red-jasmine/filament-product",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/filament-product",
@@ -8871,11 +8871,11 @@
         },
         {
             "name": "red-jasmine/filament-user",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/filament-user",
-                "reference": "c34c96beb743da38b30f329793db88c0f64704ba"
+                "reference": "a46c7995777dd2e4d0f05d3fdc5e38a8a20b8cec"
             },
             "require": {
                 "red-jasmine/filament-core": "1.0.x-dev",
@@ -8950,7 +8950,7 @@
         },
         {
             "name": "red-jasmine/interaction",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/interaction",
@@ -9092,7 +9092,7 @@
         },
         {
             "name": "red-jasmine/order",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/order",
@@ -9151,7 +9151,7 @@
         },
         {
             "name": "red-jasmine/payment",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/payment",
@@ -9213,7 +9213,7 @@
         },
         {
             "name": "red-jasmine/product",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/product",
@@ -9278,7 +9278,7 @@
         },
         {
             "name": "red-jasmine/region",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/region",
@@ -9333,7 +9333,7 @@
         },
         {
             "name": "red-jasmine/shopping",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/shopping",
@@ -9375,7 +9375,7 @@
         },
         {
             "name": "red-jasmine/socialite",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/socialite",
@@ -9457,7 +9457,7 @@
         },
         {
             "name": "red-jasmine/support",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/support",
@@ -9518,7 +9518,7 @@
         },
         {
             "name": "red-jasmine/user",
-            "version": "dev-master",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/user",
@@ -12713,6 +12713,89 @@
                 }
             ],
             "time": "2025-04-09T08:14:01+00:00"
+        },
+        {
+            "name": "tapp/filament-country-code-field",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TappNetwork/filament-country-code-field.git",
+                "reference": "51ebfc54e9739dc03ac12a3b1c2b6d0a81f94e12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TappNetwork/filament-country-code-field/zipball/51ebfc54e9739dc03ac12a3b1c2b6d0a81f94e12",
+                "reference": "51ebfc54e9739dc03ac12a3b1c2b6d0a81f94e12",
+                "shasum": ""
+            },
+            "require": {
+                "filament/filament": "^3.0-stable",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "larastan/larastan": "^2.9",
+                "laravel/pint": "^1.14",
+                "nunomaduro/collision": "^8.1.1||^7.10.0",
+                "orchestra/testbench": "^9.0.0||^8.22.0",
+                "pestphp/pest": "^2.34",
+                "pestphp/pest-plugin-arch": "^2.7",
+                "pestphp/pest-plugin-laravel": "^2.3",
+                "pestphp/pest-plugin-livewire": "^2.1",
+                "phpstan/extension-installer": "^1.3",
+                "phpstan/phpstan-deprecation-rules": "^1.1",
+                "phpstan/phpstan-phpunit": "^1.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "FilamentCountryCodeField": "Tapp\\FilamentCountryCodeField\\Facades\\FilamentCountryCodeField"
+                    },
+                    "providers": [
+                        "Tapp\\FilamentCountryCodeField\\FilamentCountryCodeFieldServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tapp\\FilamentCountryCodeField\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tapp Network",
+                    "email": "steve@tappnetwork.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Tapp Network",
+                    "email": "andreia.bohner@tappnetwork.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Filament country code field.",
+            "homepage": "https://github.com/TappNetwork/filament-country-code-field",
+            "keywords": [
+                "country code",
+                "filament",
+                "laravel",
+                "tapp network"
+            ],
+            "support": {
+                "issues": "https://github.com/TappNetwork/filament-country-code-field/issues",
+                "source": "https://github.com/TappNetwork/filament-country-code-field"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/TappNetwork",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-03-23T23:39:31+00:00"
         },
         {
             "name": "tightenco/ziggy",
@@ -16122,6 +16205,6 @@
     "platform": {
         "php": "^8.3"
     },
-    "platform-dev": {},
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
