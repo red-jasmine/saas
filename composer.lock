@@ -7913,11 +7913,11 @@
         },
         {
             "name": "red-jasmine/admin",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/admin",
-                "reference": "1f48a37dc7891f17325d23e0cccdbd1e8d86fc22"
+                "reference": "5fa8e8592f7c0d866221d91ed27ce9032190d61f"
             },
             "require": {
                 "red-jasmine/support": "1.0.x-dev",
@@ -7927,7 +7927,8 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "RedJasmine\\Admin\\AdminPackageServiceProvider"
+                        "RedJasmine\\Admin\\AdminPackageServiceProvider",
+                        "RedJasmine\\Admin\\Application\\AdminApplicationServiceProvider"
                     ]
                 },
                 "branch-alias": {
@@ -7991,7 +7992,7 @@
         },
         {
             "name": "red-jasmine/article",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/article",
@@ -8068,11 +8069,11 @@
         },
         {
             "name": "red-jasmine/captcha",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/captcha",
-                "reference": "2a99440526cabd8f57e3d628fff2b44f412ea018"
+                "reference": "c8c1321e66cb27f20aab659b1a1905ef2ece83b4"
             },
             "require": {
                 "overtrue/laravel-easy-sms": "^2.1",
@@ -8132,7 +8133,7 @@
         },
         {
             "name": "red-jasmine/card",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/card",
@@ -8192,7 +8193,7 @@
         },
         {
             "name": "red-jasmine/community",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/community",
@@ -8269,7 +8270,7 @@
         },
         {
             "name": "red-jasmine/ecommerce",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/ecommerce",
@@ -8324,11 +8325,11 @@
         },
         {
             "name": "red-jasmine/filament-admin",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/filament-admin",
-                "reference": "8de271ad6b169c0fa15ec1e79db9c5faee2d12d2"
+                "reference": "faf2d792e45604798d2498eda5ad0e33643751c2"
             },
             "require": {
                 "bezhansalleh/filament-shield": "^3.3",
@@ -8397,7 +8398,7 @@
         },
         {
             "name": "red-jasmine/filament-article",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/filament-article",
@@ -8475,7 +8476,7 @@
         },
         {
             "name": "red-jasmine/filament-card",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/filament-card",
@@ -8551,11 +8552,11 @@
         },
         {
             "name": "red-jasmine/filament-community",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/filament-community",
-                "reference": "9442fbd78a3b4571b225876ea632b0e91204c29d"
+                "reference": "3b13bc9466dba8cf0786ad2014ffb4ad8de24499"
             },
             "require": {
                 "red-jasmine/community": "1.0.x-dev",
@@ -8629,7 +8630,7 @@
         },
         {
             "name": "red-jasmine/filament-core",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/filament-core",
@@ -8717,7 +8718,7 @@
         },
         {
             "name": "red-jasmine/filament-order",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/filament-order",
@@ -8798,7 +8799,7 @@
         },
         {
             "name": "red-jasmine/filament-product",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/filament-product",
@@ -8871,11 +8872,11 @@
         },
         {
             "name": "red-jasmine/filament-user",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/filament-user",
-                "reference": "a46c7995777dd2e4d0f05d3fdc5e38a8a20b8cec"
+                "reference": "c34c96beb743da38b30f329793db88c0f64704ba"
             },
             "require": {
                 "red-jasmine/filament-core": "1.0.x-dev",
@@ -8950,7 +8951,7 @@
         },
         {
             "name": "red-jasmine/interaction",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/interaction",
@@ -9092,7 +9093,7 @@
         },
         {
             "name": "red-jasmine/order",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/order",
@@ -9151,7 +9152,7 @@
         },
         {
             "name": "red-jasmine/payment",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/payment",
@@ -9213,7 +9214,7 @@
         },
         {
             "name": "red-jasmine/product",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/product",
@@ -9278,7 +9279,7 @@
         },
         {
             "name": "red-jasmine/region",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/region",
@@ -9333,7 +9334,7 @@
         },
         {
             "name": "red-jasmine/shopping",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/shopping",
@@ -9375,7 +9376,7 @@
         },
         {
             "name": "red-jasmine/socialite",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/socialite",
@@ -9457,7 +9458,7 @@
         },
         {
             "name": "red-jasmine/support",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/support",
@@ -9518,7 +9519,7 @@
         },
         {
             "name": "red-jasmine/user",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../../red-jasmine/framework/packages/user",
@@ -16205,6 +16206,6 @@
     "platform": {
         "php": "^8.3"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
