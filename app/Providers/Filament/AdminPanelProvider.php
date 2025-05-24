@@ -9,6 +9,7 @@ use Filament\Support\Enums\MaxWidth;
 use RedJasmine\FilamentArticle\FilamentArticlePlugin;
 use RedJasmine\FilamentCard\FilamentCardPlugin;
 use RedJasmine\FilamentCommunity\FilamentCommunityPlugin;
+use RedJasmine\FilamentLogistics\FilamentLogisticsPlugin;
 use RedJasmine\FilamentOrder\FilamentOrderPlugin;
 use RedJasmine\FilamentProduct\FilamentProductPlugin;
 use RedJasmine\FilamentUser\FilamentUserPlugin;
@@ -44,6 +45,7 @@ class AdminPanelProvider extends \RedJasmine\FilamentAdmin\AdminPanelProvider
                 FilamentCardPlugin::make(),
                 FilamentCommunityPlugin::make(),
                 FilamentArticlePlugin::make(),
+                FilamentLogisticsPlugin::make(),
 
             ]);
     }
