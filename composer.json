@@ -103,7 +103,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "../../red-jasmine/framework/packages/*",
+            "url": "./framework/packages/*",
             "options": {
                 "symlink": true
             }
