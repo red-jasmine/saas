@@ -48,6 +48,10 @@ return [
             'driver' => 'jwt',
             'provider' => 'users',
         ],
+        'shop' => [
+            'driver' => 'jwt',
+            'provider' => 'shops',
+        ],
         'admin' => [
             'driver' => 'session',
             'provider' => 'admins',
@@ -79,6 +83,10 @@ return [
         'admins' => [
             'driver' => 'eloquent',
             'model' => env('AUTH_MODEL', \RedJasmine\Admin\Domain\Models\Admin::class),
+        ],
+        'shops' => [
+            'driver' => 'eloquent',
+            'model' => env('AUTH_MODEL', \RedJasmine\Shop\Domain\Models\Shop::class),
         ],
 
         // 'users' => [

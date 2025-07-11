@@ -16,6 +16,7 @@
         "red-jasmine/address": "1.0.x-dev",
         "red-jasmine/admin": "1.0.x-dev",
         "red-jasmine/card": "1.0.x-dev",
+        "red-jasmine/shop": "1.0.x-dev",
         "red-jasmine/filament-admin": "1.0.x-dev",
         "red-jasmine/filament-article": "1.0.x-dev",
         "red-jasmine/filament-card": "1.0.x-dev",
@@ -24,6 +25,7 @@
         "red-jasmine/filament-order": "1.0.x-dev",
         "red-jasmine/filament-product": "1.0.x-dev",
         "red-jasmine/filament-user": "1.0.x-dev",
+        "red-jasmine/filament-coupon": "1.0.x-dev",
         "red-jasmine/logistics": "1.0.x-dev",
         "red-jasmine/region": "1.0.x-dev",
         "red-jasmine/shopping": "1.0.x-dev",
@@ -36,7 +38,6 @@
     "require-dev": {
         "fakerphp/faker": "^1.23",
         "laravel/pail": "^1.2.2",
-        "laravel/pint": "^1.18",
         "laravel/sail": "^1.41",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.6",
