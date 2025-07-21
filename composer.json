@@ -32,7 +32,6 @@
         "red-jasmine/distribution": "1.0.x-dev",
         "red-jasmine/user": "1.0.x-dev",
         "stancl/tenancy": "^3.9",
-        "tapp/filament-country-code-field": "^1.0",
         "tightenco/ziggy": "^2.4"
     },
     "require-dev": {
