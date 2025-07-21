@@ -1,28 +1,61 @@
-FROM serversideup/php:8.4-fpm-nginx-alpine
+############################################
+# Base Image
+############################################
 
+# Learn more about the Server Side Up PHP Docker Images at:
+# https://serversideup.net/open-source/docker-php/
+FROM serversideup/php:8.4-fpm-nginx AS base
 
-
-# compile native PHP packages
-RUN docker-php-ext-install \
+# Switch to root before installing our PHP extensions
+USER root
+RUN install-php-extensions \
+    bcmath  \
+    gd \
+    intl \
+    mbstring \
     gd \
     pcntl \
     bcmath \
-    mysqli \
-    pdo_mysql \
-    intl
+    redis \
+    igbinary \
+    msgpack \
+    mongodb \
+    opcache
 
-# configure packages
-RUN docker-php-ext-configure gd --with-freetype --with-jpeg
-# install additional packages from PECL
+############################################
+# Development Image
+############################################
+FROM base AS development
 
-RUN pecl channel-update pecl.php.net && \
-    pecl install redis igbinary msgpack  mongodb opcache && \
-    docker-php-ext-enable redis igbinary msgpack mongodb opcache
+# We can pass USER_ID and GROUP_ID as build arguments
+# to ensure the www-data user has the same UID and GID
+# as the user running Docker.
+ARG USER_ID
+ARG GROUP_ID
 
+# Switch to root so we can set the user ID and group ID
+USER root
+RUN docker-php-serversideup-set-id www-data $USER_ID:$GROUP_ID  && \
+    docker-php-serversideup-set-file-permissions --owner $USER_ID:$GROUP_ID --service nginx
 
+# Switch back to the unprivileged www-data user
+USER www-data
 
-COPY . /var/www/app
+############################################
+# CI image
+############################################
+FROM base AS ci
 
-WORKDIR /var/www/app
+# Sometimes CI images need to run as root
+# so we set the ROOT user and configure
+# the PHP-FPM pool to run as www-data
+USER root
+RUN echo "user = www-data" >> /usr/local/etc/php-fpm.d/docker-php-serversideup-pool.conf && \
+    echo "group = www-data" >> /usr/local/etc/php-fpm.d/docker-php-serversideup-pool.conf
 
-RUN composer install --no-dev --optimize-autoloader
+############################################
+# Production Image
+############################################
+FROM base AS deploy
+COPY --chown=www-data:www-data . /var/www/html
+USER www-data
