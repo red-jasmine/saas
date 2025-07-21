@@ -7268,16 +7268,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "2.1.0",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "9b30d6fd026b2c132b3985ce6b23bec09ab3aa68"
+                "reference": "b9e61a61e39e02dd90944e9115241c7f7e76bfd8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/9b30d6fd026b2c132b3985ce6b23bec09ab3aa68",
-                "reference": "9b30d6fd026b2c132b3985ce6b23bec09ab3aa68",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/b9e61a61e39e02dd90944e9115241c7f7e76bfd8",
+                "reference": "b9e61a61e39e02dd90944e9115241c7f7e76bfd8",
                 "shasum": ""
             },
             "require": {
@@ -7309,9 +7309,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/2.1.0"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/2.2.0"
             },
-            "time": "2025-02-19T13:28:12+00:00"
+            "time": "2025-07-13T07:04:09+00:00"
         },
         {
             "name": "psr/cache",
@@ -8471,9 +8471,10 @@
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/coupon",
-                "reference": "2cd25095d392e2a47135a04a689fd59edc5d599c"
+                "reference": "68b60bff4ed4bf5ddac7e9299be56ac56fe99207"
             },
             "require": {
+                "red-jasmine/ecommerce": "1.0.x-dev",
                 "red-jasmine/support": "1.0.x-dev"
             },
             "type": "library",
@@ -8957,7 +8958,7 @@
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/filament-core",
-                "reference": "a7af7d4ed0fcc2a54f89feacf9788cdaf3d8b00e"
+                "reference": "fea92976f1df17f5c9540bbf65b5857b9b694526"
             },
             "require": {
                 "awcodes/filament-table-repeater": "^3.0",
@@ -8970,13 +8971,6 @@
                 "malzariey/filament-daterangepicker-filter": "*",
                 "mokhosh/filament-rating": "^1.0",
                 "red-jasmine/support": "1.0.x-dev"
-            },
-            "require-dev": {
-                "nunomaduro/collision": "^7.9",
-                "orchestra/testbench": "^8.0",
-                "pestphp/pest": "^2.1",
-                "pestphp/pest-plugin-arch": "^2.0",
-                "pestphp/pest-plugin-laravel": "^2.0"
             },
             "type": "library",
             "extra": {
@@ -9973,16 +9967,18 @@
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/shopping",
-                "reference": "1fc725bed2672b9799116d73ccd10c6d95cc062d"
+                "reference": "13d4ab9f7e9d75360ccf2a50ad5649da22579dcd"
             },
             "require": {
                 "ext-bcmath": "*",
+                "red-jasmine/address": "1.0.x-dev",
                 "red-jasmine/coupon": "1.0.x-dev",
                 "red-jasmine/order": "1.0.x-dev",
                 "red-jasmine/payment": "1.0.x-dev",
                 "red-jasmine/product": "1.0.x-dev",
                 "red-jasmine/shop": "1.0.x-dev",
-                "red-jasmine/support": "1.0.x-dev"
+                "red-jasmine/support": "1.0.x-dev",
+                "red-jasmine/wallet": "1.0.x-dev"
             },
             "type": "library",
             "extra": {
@@ -10225,6 +10221,66 @@
                 "laravel",
                 "red-jasmine",
                 "user"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
+            "name": "red-jasmine/wallet",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./framework/packages/wallet",
+                "reference": "d2874caf7b3880154c5e7d8f9cb82653a07bd54e"
+            },
+            "require": {
+                "red-jasmine/support": "1.0.x-dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "RedJasmine\\Wallet\\WalletServicePackageProvider",
+                        "RedJasmine\\Wallet\\Application\\WalletApplicationServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev",
+                    "dev-main": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RedJasmine\\Wallet\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "RedJasmine\\Wallet\\Tests\\": "tests"
+                }
+            },
+            "scripts": {
+                "post-autoload-dump": [
+                    "@php vendor/bin/testbench package:discover --ansi"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "liushoukun",
+                    "email": "liushoukun66@gmail.com",
+                    "homepage": "https://github.com/liushoukun"
+                }
+            ],
+            "description": ":package_description",
+            "homepage": "https://github.com/red-jasmine/wallet",
+            "keywords": [
+                "Laravel",
+                "Wallet"
             ],
             "transport-options": {
                 "symlink": true,
@@ -10584,16 +10640,16 @@
         },
         {
             "name": "spatie/laravel-package-tools",
-            "version": "1.92.4",
+            "version": "1.92.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-package-tools.git",
-                "reference": "d20b1969f836d210459b78683d85c9cd5c5f508c"
+                "reference": "afa90e37741a953d33728e7106a1f24a13fdd808"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/d20b1969f836d210459b78683d85c9cd5c5f508c",
-                "reference": "d20b1969f836d210459b78683d85c9cd5c5f508c",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/afa90e37741a953d33728e7106a1f24a13fdd808",
+                "reference": "afa90e37741a953d33728e7106a1f24a13fdd808",
                 "shasum": ""
             },
             "require": {
@@ -10633,7 +10689,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-package-tools/issues",
-                "source": "https://github.com/spatie/laravel-package-tools/tree/1.92.4"
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.92.6"
             },
             "funding": [
                 {
@@ -10641,7 +10697,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-04-11T15:27:14+00:00"
+            "time": "2025-07-14T08:02:47+00:00"
         },
         {
             "name": "spatie/laravel-permission",
@@ -10728,16 +10784,16 @@
         },
         {
             "name": "spatie/laravel-query-builder",
-            "version": "6.3.2",
+            "version": "6.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-query-builder.git",
-                "reference": "3675f7bace346dc5243f58fa7c531e36471200f4"
+                "reference": "0d80323d2b2ffc410f06bf73c2e3a6ad763e4b8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-query-builder/zipball/3675f7bace346dc5243f58fa7c531e36471200f4",
-                "reference": "3675f7bace346dc5243f58fa7c531e36471200f4",
+                "url": "https://api.github.com/repos/spatie/laravel-query-builder/zipball/0d80323d2b2ffc410f06bf73c2e3a6ad763e4b8d",
+                "reference": "0d80323d2b2ffc410f06bf73c2e3a6ad763e4b8d",
                 "shasum": ""
             },
             "require": {
@@ -10749,6 +10805,7 @@
             },
             "require-dev": {
                 "ext-json": "*",
+                "larastan/larastan": "^2.7 || ^3.3",
                 "mockery/mockery": "^1.4",
                 "orchestra/testbench": "^7.0|^8.0|^10.0",
                 "pestphp/pest": "^2.0|^3.7",
@@ -10797,7 +10854,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-04-16T07:30:03+00:00"
+            "time": "2025-07-14T08:31:42+00:00"
         },
         {
             "name": "spatie/php-structure-discoverer",
