@@ -53,6 +53,9 @@ USER root
 RUN echo "user = www-data" >> /usr/local/etc/php-fpm.d/docker-php-serversideup-pool.conf && \
     echo "group = www-data" >> /usr/local/etc/php-fpm.d/docker-php-serversideup-pool.conf
 
+
+ENV AUTORUN_LARAVEL_STORAGE_LINK=true \
+    PHP_OPCACHE_ENABLE=true
 ############################################
 # Production Image
 ############################################
