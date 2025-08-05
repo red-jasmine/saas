@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c8d249c05bdf4918359f5b30a0bf68c9",
+    "content-hash": "fcd9560ccb58856bda88ff4fe1eee265",
     "packages": [
         {
             "name": "aliyuncs/oss-sdk-php",
@@ -861,16 +861,16 @@
         },
         {
             "name": "anourvalar/eloquent-serialize",
-            "version": "1.3.3",
+            "version": "1.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AnourValar/eloquent-serialize.git",
-                "reference": "2f05023f1e465a91dc4f08483e6710325641a444"
+                "reference": "0934a98866e02b73e38696961a9d7984b834c9d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AnourValar/eloquent-serialize/zipball/2f05023f1e465a91dc4f08483e6710325641a444",
-                "reference": "2f05023f1e465a91dc4f08483e6710325641a444",
+                "url": "https://api.github.com/repos/AnourValar/eloquent-serialize/zipball/0934a98866e02b73e38696961a9d7984b834c9d9",
+                "reference": "0934a98866e02b73e38696961a9d7984b834c9d9",
                 "shasum": ""
             },
             "require": {
@@ -921,9 +921,9 @@
             ],
             "support": {
                 "issues": "https://github.com/AnourValar/eloquent-serialize/issues",
-                "source": "https://github.com/AnourValar/eloquent-serialize/tree/1.3.3"
+                "source": "https://github.com/AnourValar/eloquent-serialize/tree/1.3.4"
             },
-            "time": "2025-05-28T17:07:28+00:00"
+            "time": "2025-07-30T15:45:57+00:00"
         },
         {
             "name": "awcodes/filament-table-repeater",
@@ -1729,16 +1729,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "4.3.0",
+            "version": "4.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "5fe09532be619202d59c70956c6fb20e97933ee3"
+                "reference": "ac336c95ea9e13433d56ca81c308b39db0e1a2a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/5fe09532be619202d59c70956c6fb20e97933ee3",
-                "reference": "5fe09532be619202d59c70956c6fb20e97933ee3",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/ac336c95ea9e13433d56ca81c308b39db0e1a2a7",
+                "reference": "ac336c95ea9e13433d56ca81c308b39db0e1a2a7",
                 "shasum": ""
             },
             "require": {
@@ -1815,7 +1815,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/4.3.0"
+                "source": "https://github.com/doctrine/dbal/tree/4.3.1"
             },
             "funding": [
                 {
@@ -1831,7 +1831,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-06-16T19:31:04+00:00"
+            "time": "2025-07-22T10:09:51+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -3291,12 +3291,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ibrahimBougaoua/filaprogress.git",
-                "reference": "eca3e3a427e1725aa4c166b658d109086dde387e"
+                "reference": "cdf30f340573b4a7e7c5791a64b4f51fbea21b16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ibrahimBougaoua/filaprogress/zipball/eca3e3a427e1725aa4c166b658d109086dde387e",
-                "reference": "eca3e3a427e1725aa4c166b658d109086dde387e",
+                "url": "https://api.github.com/repos/ibrahimBougaoua/filaprogress/zipball/cdf30f340573b4a7e7c5791a64b4f51fbea21b16",
+                "reference": "cdf30f340573b4a7e7c5791a64b4f51fbea21b16",
                 "shasum": ""
             },
             "require": {
@@ -3363,7 +3363,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-05-12T21:49:04+00:00"
+            "time": "2025-07-29T00:43:20+00:00"
         },
         {
             "name": "icetalker/filament-table-repeatable-entry",
@@ -3436,16 +3436,16 @@
         },
         {
             "name": "iidestiny/flysystem-oss",
-            "version": "4.7",
+            "version": "4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/iiDestiny/flysystem-oss.git",
-                "reference": "eaee0f26584ba1e4fbbf79cb243043dfca2e9232"
+                "reference": "9b5d1104f460b8593984d6fa7f927e5b9f06b6bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/iiDestiny/flysystem-oss/zipball/eaee0f26584ba1e4fbbf79cb243043dfca2e9232",
-                "reference": "eaee0f26584ba1e4fbbf79cb243043dfca2e9232",
+                "url": "https://api.github.com/repos/iiDestiny/flysystem-oss/zipball/9b5d1104f460b8593984d6fa7f927e5b9f06b6bd",
+                "reference": "9b5d1104f460b8593984d6fa7f927e5b9f06b6bd",
                 "shasum": ""
             },
             "require": {
@@ -3486,9 +3486,9 @@
             ],
             "support": {
                 "issues": "https://github.com/iiDestiny/flysystem-oss/issues",
-                "source": "https://github.com/iiDestiny/flysystem-oss/tree/4.7"
+                "source": "https://github.com/iiDestiny/flysystem-oss/tree/4.8"
             },
-            "time": "2025-04-24T01:35:16+00:00"
+            "time": "2025-08-01T03:28:09+00:00"
         },
         {
             "name": "iidestiny/laravel-filesystem-oss",
@@ -5263,16 +5263,16 @@
         },
         {
             "name": "malzariey/filament-daterangepicker-filter",
-            "version": "4.0.0",
+            "version": "3.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/malzariey/filament-daterangepicker-filter.git",
-                "reference": "4374c783c210be334417a9adce5ab5dd1f77c356"
+                "reference": "d25acec4fb0c0b0dafd84aebf59e4a33f0f28140"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/malzariey/filament-daterangepicker-filter/zipball/4374c783c210be334417a9adce5ab5dd1f77c356",
-                "reference": "4374c783c210be334417a9adce5ab5dd1f77c356",
+                "url": "https://api.github.com/repos/malzariey/filament-daterangepicker-filter/zipball/d25acec4fb0c0b0dafd84aebf59e4a33f0f28140",
+                "reference": "d25acec4fb0c0b0dafd84aebf59e4a33f0f28140",
                 "shasum": ""
             },
             "require": {
@@ -5317,7 +5317,7 @@
             ],
             "support": {
                 "issues": "https://github.com/malzariey/filament-daterangepicker-filter/issues",
-                "source": "https://github.com/malzariey/filament-daterangepicker-filter/tree/4.0.0"
+                "source": "https://github.com/malzariey/filament-daterangepicker-filter/tree/3.4.3"
             },
             "funding": [
                 {
@@ -5325,20 +5325,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-06-12T04:40:48+00:00"
+            "time": "2025-06-12T08:50:07+00:00"
         },
         {
             "name": "masterminds/html5",
-            "version": "2.9.0",
+            "version": "2.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Masterminds/html5-php.git",
-                "reference": "f5ac2c0b0a2eefca70b2ce32a5809992227e75a6"
+                "reference": "fcf91eb64359852f00d921887b219479b4f21251"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/f5ac2c0b0a2eefca70b2ce32a5809992227e75a6",
-                "reference": "f5ac2c0b0a2eefca70b2ce32a5809992227e75a6",
+                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/fcf91eb64359852f00d921887b219479b4f21251",
+                "reference": "fcf91eb64359852f00d921887b219479b4f21251",
                 "shasum": ""
             },
             "require": {
@@ -5390,9 +5390,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Masterminds/html5-php/issues",
-                "source": "https://github.com/Masterminds/html5-php/tree/2.9.0"
+                "source": "https://github.com/Masterminds/html5-php/tree/2.10.0"
             },
-            "time": "2024-03-31T07:05:07+00:00"
+            "time": "2025-07-25T09:04:22+00:00"
         },
         {
             "name": "mokhosh/filament-rating",
@@ -7783,16 +7783,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.12.9",
+            "version": "v0.12.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "1b801844becfe648985372cb4b12ad6840245ace"
+                "reference": "6e80abe6f2257121f1eb9a4c55bf29d921025b22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/1b801844becfe648985372cb4b12ad6840245ace",
-                "reference": "1b801844becfe648985372cb4b12ad6840245ace",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/6e80abe6f2257121f1eb9a4c55bf29d921025b22",
+                "reference": "6e80abe6f2257121f1eb9a4c55bf29d921025b22",
                 "shasum": ""
             },
             "require": {
@@ -7842,12 +7842,11 @@
             "authors": [
                 {
                     "name": "Justin Hileman",
-                    "email": "justin@justinhileman.info",
-                    "homepage": "http://justinhileman.com"
+                    "email": "justin@justinhileman.info"
                 }
             ],
             "description": "An interactive shell for modern PHP.",
-            "homepage": "http://psysh.org",
+            "homepage": "https://psysh.org",
             "keywords": [
                 "REPL",
                 "console",
@@ -7856,9 +7855,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.12.9"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.12.10"
             },
-            "time": "2025-06-23T02:35:06+00:00"
+            "time": "2025-08-04T12:39:37+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -8060,7 +8059,7 @@
         },
         {
             "name": "red-jasmine/address",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/address",
@@ -8116,11 +8115,11 @@
         },
         {
             "name": "red-jasmine/admin",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/admin",
-                "reference": "39eeda885dad23c2a83925d672f0dd9379634afc"
+                "reference": "008929cedaf245446cea276b0fe18fdeb0a4f88c"
             },
             "require": {
                 "red-jasmine/support": "1.0.x-dev",
@@ -8196,7 +8195,7 @@
         },
         {
             "name": "red-jasmine/article",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/article",
@@ -8273,11 +8272,11 @@
         },
         {
             "name": "red-jasmine/captcha",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/captcha",
-                "reference": "2a99440526cabd8f57e3d628fff2b44f412ea018"
+                "reference": "c8c1321e66cb27f20aab659b1a1905ef2ece83b4"
             },
             "require": {
                 "overtrue/laravel-easy-sms": "^2.1",
@@ -8337,7 +8336,7 @@
         },
         {
             "name": "red-jasmine/card",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/card",
@@ -8397,7 +8396,7 @@
         },
         {
             "name": "red-jasmine/community",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/community",
@@ -8474,7 +8473,7 @@
         },
         {
             "name": "red-jasmine/coupon",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/coupon",
@@ -8523,7 +8522,7 @@
         },
         {
             "name": "red-jasmine/distribution",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/distribution",
@@ -8601,7 +8600,7 @@
         },
         {
             "name": "red-jasmine/ecommerce",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/ecommerce",
@@ -8656,11 +8655,11 @@
         },
         {
             "name": "red-jasmine/filament-admin",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/filament-admin",
-                "reference": "8de271ad6b169c0fa15ec1e79db9c5faee2d12d2"
+                "reference": "faf2d792e45604798d2498eda5ad0e33643751c2"
             },
             "require": {
                 "bezhansalleh/filament-shield": "^3.3",
@@ -8729,7 +8728,7 @@
         },
         {
             "name": "red-jasmine/filament-article",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/filament-article",
@@ -8807,7 +8806,7 @@
         },
         {
             "name": "red-jasmine/filament-card",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/filament-card",
@@ -8883,11 +8882,11 @@
         },
         {
             "name": "red-jasmine/filament-community",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/filament-community",
-                "reference": "9442fbd78a3b4571b225876ea632b0e91204c29d"
+                "reference": "3b13bc9466dba8cf0786ad2014ffb4ad8de24499"
             },
             "require": {
                 "red-jasmine/community": "1.0.x-dev",
@@ -8961,7 +8960,7 @@
         },
         {
             "name": "red-jasmine/filament-core",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/filament-core",
@@ -9042,7 +9041,7 @@
         },
         {
             "name": "red-jasmine/filament-coupon",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/filament-coupon",
@@ -9120,11 +9119,11 @@
         },
         {
             "name": "red-jasmine/filament-logistics",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/filament-logistics",
-                "reference": "edf3df29b6274d42e32e73dbe385f1eccfe04eab"
+                "reference": "9d8f12bc9d12670e5733be163ec40cf8a3f937ce"
             },
             "require": {
                 "red-jasmine/logistics": "^1.0.x-dev",
@@ -9192,7 +9191,7 @@
         },
         {
             "name": "red-jasmine/filament-order",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/filament-order",
@@ -9265,7 +9264,7 @@
         },
         {
             "name": "red-jasmine/filament-product",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/filament-product",
@@ -9338,11 +9337,11 @@
         },
         {
             "name": "red-jasmine/filament-user",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/filament-user",
-                "reference": "a46c7995777dd2e4d0f05d3fdc5e38a8a20b8cec"
+                "reference": "c34c96beb743da38b30f329793db88c0f64704ba"
             },
             "require": {
                 "red-jasmine/filament-core": "1.0.x-dev",
@@ -9417,7 +9416,7 @@
         },
         {
             "name": "red-jasmine/interaction",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/interaction",
@@ -9493,7 +9492,7 @@
         },
         {
             "name": "red-jasmine/invitation",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/invitation",
@@ -9616,7 +9615,7 @@
         },
         {
             "name": "red-jasmine/logistics",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/logistics",
@@ -9677,7 +9676,7 @@
         },
         {
             "name": "red-jasmine/order",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/order",
@@ -9736,7 +9735,7 @@
         },
         {
             "name": "red-jasmine/payment",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/payment",
@@ -9797,8 +9796,69 @@
             }
         },
         {
+            "name": "red-jasmine/points-mall",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "./framework/packages/points-mall",
+                "reference": "ad1a2df726ceb2625dd7f10b4d5b091623e45ff1"
+            },
+            "require": {
+                "red-jasmine/address": "^1.0.x-dev",
+                "red-jasmine/ecommerce": "^1.0.x-dev",
+                "red-jasmine/order": "^1.0.x-dev",
+                "red-jasmine/payment": "^1.0.x-dev",
+                "red-jasmine/product": "^1.0.x-dev",
+                "red-jasmine/support": "^1.0.x-dev",
+                "red-jasmine/wallet": "^1.0.x-dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "RedJasmine\\PointsMall\\PointsMallPackageServiceProvider"
+                    ]
+                },
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev",
+                    "dev-main": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RedJasmine\\PointsMall\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "RedJasmine\\PointsMall\\Tests\\": "tests"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "liushoukun",
+                    "email": "liushoukun66@gmail.com",
+                    "homepage": "https://github.com/liushoukun"
+                }
+            ],
+            "description": "积分商城模块",
+            "homepage": "https://github.com/red-jasmine/points-mall",
+            "keywords": [
+                "Laravel",
+                "PointsMall",
+                "积分商城"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
+        },
+        {
             "name": "red-jasmine/product",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/product",
@@ -9864,7 +9924,7 @@
         },
         {
             "name": "red-jasmine/region",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/region",
@@ -9919,7 +9979,7 @@
         },
         {
             "name": "red-jasmine/shop",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/shop",
@@ -9963,7 +10023,7 @@
         },
         {
             "name": "red-jasmine/shopping",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/shopping",
@@ -10009,7 +10069,7 @@
         },
         {
             "name": "red-jasmine/socialite",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/socialite",
@@ -10091,7 +10151,7 @@
         },
         {
             "name": "red-jasmine/support",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/support",
@@ -10149,7 +10209,7 @@
         },
         {
             "name": "red-jasmine/user",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/user",
@@ -10229,7 +10289,7 @@
         },
         {
             "name": "red-jasmine/wallet",
-            "version": "dev-main",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "./framework/packages/wallet",
@@ -10701,16 +10761,16 @@
         },
         {
             "name": "spatie/laravel-permission",
-            "version": "6.20.0",
+            "version": "6.21.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-permission.git",
-                "reference": "31c05679102c73f3b0d05790d2400182745a5615"
+                "reference": "6a118e8855dfffcd90403aab77bbf35a03db51b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/31c05679102c73f3b0d05790d2400182745a5615",
-                "reference": "31c05679102c73f3b0d05790d2400182745a5615",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/6a118e8855dfffcd90403aab77bbf35a03db51b3",
+                "reference": "6a118e8855dfffcd90403aab77bbf35a03db51b3",
                 "shasum": ""
             },
             "require": {
@@ -10772,7 +10832,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-permission/issues",
-                "source": "https://github.com/spatie/laravel-permission/tree/6.20.0"
+                "source": "https://github.com/spatie/laravel-permission/tree/6.21.0"
             },
             "funding": [
                 {
@@ -10780,7 +10840,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-06-05T07:33:07+00:00"
+            "time": "2025-07-23T16:08:05+00:00"
         },
         {
             "name": "spatie/laravel-query-builder",
@@ -10937,16 +10997,16 @@
         },
         {
             "name": "stancl/jobpipeline",
-            "version": "v1.8.0",
+            "version": "v1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/archtechx/jobpipeline.git",
-                "reference": "a987f8ff698456bb807937225b1a98fd92ce3124"
+                "reference": "c4ba5ef04c99176eb000abb05fc81fb0f44f5d9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/archtechx/jobpipeline/zipball/a987f8ff698456bb807937225b1a98fd92ce3124",
-                "reference": "a987f8ff698456bb807937225b1a98fd92ce3124",
+                "url": "https://api.github.com/repos/archtechx/jobpipeline/zipball/c4ba5ef04c99176eb000abb05fc81fb0f44f5d9c",
+                "reference": "c4ba5ef04c99176eb000abb05fc81fb0f44f5d9c",
                 "shasum": ""
             },
             "require": {
@@ -10977,9 +11037,9 @@
             "description": "Turn any series of jobs into Laravel listeners.",
             "support": {
                 "issues": "https://github.com/archtechx/jobpipeline/issues",
-                "source": "https://github.com/archtechx/jobpipeline/tree/v1.8.0"
+                "source": "https://github.com/archtechx/jobpipeline/tree/v1.8.1"
             },
-            "time": "2025-02-25T11:59:50+00:00"
+            "time": "2025-07-29T20:21:17+00:00"
         },
         {
             "name": "stancl/tenancy",
@@ -11719,16 +11779,16 @@
         },
         {
             "name": "symfony/html-sanitizer",
-            "version": "v7.3.0",
+            "version": "v7.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/html-sanitizer.git",
-                "reference": "cf21254e982b12276329940ca4af5e623ee06c58"
+                "reference": "3388e208450fcac57d24aef4d5ae41037b663630"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/html-sanitizer/zipball/cf21254e982b12276329940ca4af5e623ee06c58",
-                "reference": "cf21254e982b12276329940ca4af5e623ee06c58",
+                "url": "https://api.github.com/repos/symfony/html-sanitizer/zipball/3388e208450fcac57d24aef4d5ae41037b663630",
+                "reference": "3388e208450fcac57d24aef4d5ae41037b663630",
                 "shasum": ""
             },
             "require": {
@@ -11768,7 +11828,7 @@
                 "sanitizer"
             ],
             "support": {
-                "source": "https://github.com/symfony/html-sanitizer/tree/v7.3.0"
+                "source": "https://github.com/symfony/html-sanitizer/tree/v7.3.2"
             },
             "funding": [
                 {
@@ -11780,11 +11840,15 @@
                     "type": "github"
                 },
                 {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
                     "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-03-31T08:49:55+00:00"
+            "time": "2025-07-10T08:29:33+00:00"
         },
         {
             "name": "symfony/http-foundation",
@@ -14362,16 +14426,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.43.1",
+            "version": "v1.44.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "3e7d899232a8c5e3ea4fc6dee7525ad583887e72"
+                "reference": "a09097bd2a8a38e23ac472fa6a6cf5b0d1c1d3fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/3e7d899232a8c5e3ea4fc6dee7525ad583887e72",
-                "reference": "3e7d899232a8c5e3ea4fc6dee7525ad583887e72",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/a09097bd2a8a38e23ac472fa6a6cf5b0d1c1d3fe",
+                "reference": "a09097bd2a8a38e23ac472fa6a6cf5b0d1c1d3fe",
                 "shasum": ""
             },
             "require": {
@@ -14421,7 +14485,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2025-05-19T13:19:21+00:00"
+            "time": "2025-07-04T16:17:06+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -14508,16 +14572,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.13.3",
+            "version": "1.13.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "faed855a7b5f4d4637717c2b3863e277116beb36"
+                "reference": "07d290f0c47959fd5eed98c95ee5602db07e0b6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/faed855a7b5f4d4637717c2b3863e277116beb36",
-                "reference": "faed855a7b5f4d4637717c2b3863e277116beb36",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/07d290f0c47959fd5eed98c95ee5602db07e0b6a",
+                "reference": "07d290f0c47959fd5eed98c95ee5602db07e0b6a",
                 "shasum": ""
             },
             "require": {
@@ -14556,7 +14620,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/DeepCopy/issues",
-                "source": "https://github.com/myclabs/DeepCopy/tree/1.13.3"
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.13.4"
             },
             "funding": [
                 {
@@ -14564,7 +14628,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-07-05T12:25:42+00:00"
+            "time": "2025-08-01T08:46:24+00:00"
         },
         {
             "name": "nunomaduro/collision",
@@ -16609,16 +16673,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v7.3.1",
+            "version": "v7.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "0c3555045a46ab3cd4cc5a69d161225195230edb"
+                "reference": "b8d7d868da9eb0919e99c8830431ea087d6aae30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/0c3555045a46ab3cd4cc5a69d161225195230edb",
-                "reference": "0c3555045a46ab3cd4cc5a69d161225195230edb",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/b8d7d868da9eb0919e99c8830431ea087d6aae30",
+                "reference": "b8d7d868da9eb0919e99c8830431ea087d6aae30",
                 "shasum": ""
             },
             "require": {
@@ -16661,7 +16725,7 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/yaml/tree/v7.3.1"
+                "source": "https://github.com/symfony/yaml/tree/v7.3.2"
             },
             "funding": [
                 {
@@ -16673,11 +16737,15 @@
                     "type": "github"
                 },
                 {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
                     "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-06-03T06:57:57+00:00"
+            "time": "2025-07-10T08:47:49+00:00"
         },
         {
             "name": "ta-tikoma/phpunit-architecture-test",
@@ -16807,6 +16875,7 @@
         "red-jasmine/filament-user": 20,
         "red-jasmine/logistics": 20,
         "red-jasmine/payment": 20,
+        "red-jasmine/points-mall": 20,
         "red-jasmine/region": 20,
         "red-jasmine/shop": 20,
         "red-jasmine/shopping": 20,
