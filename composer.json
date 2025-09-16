@@ -108,6 +108,13 @@
     "repositories": [
         {
             "type": "path",
+            "url": "./framework/filament/*",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
             "url": "./framework/packages/*",
             "options": {
                 "symlink": true
