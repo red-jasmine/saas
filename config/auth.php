@@ -14,7 +14,7 @@ return [
     */
 
     'defaults' => [
-        'guard' => env('AUTH_GUARD', 'web'),
+        'guard'     => env('AUTH_GUARD', 'web'),
         'passwords' => env('AUTH_PASSWORD_BROKER', 'users'),
     ],
 
@@ -36,24 +36,24 @@ return [
     */
 
     'guards' => [
-        'web' => [
-            'driver' => 'session',
+        'web'         => [
+            'driver'   => 'session',
             'provider' => 'users',
         ],
-        'api' => [
-            'driver' => 'jwt',
+        'api'         => [
+            'driver'   => 'jwt',
+            'provider' => 'jwt',
+        ],
+        'user'        => [
+            'driver'   => 'jwt',
             'provider' => 'users',
         ],
-        'user' => [
-            'driver' => 'jwt',
-            'provider' => 'users',
-        ],
-        'shop' => [
-            'driver' => 'jwt',
+        'shop'        => [
+            'driver'   => 'jwt',
             'provider' => 'shops',
         ],
         'admin-panel' => [
-            'driver' => 'session',
+            'driver'   => 'session',
             'provider' => 'admins',
         ],
     ],
@@ -78,9 +78,15 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => env('AUTH_MODEL', \RedJasmine\User\Domain\Models\User::class),
+            'model'  => env('AUTH_MODEL', \RedJasmine\User\Domain\Models\User::class),
         ],
 
+        'jwt' => [
+            'driver' => 'jwt',
+            'models' => [
+                'user' => \RedJasmine\User\Domain\Models\User::class,
+            ],
+        ],
 
         // 'users' => [
         //     'driver' => 'database',
@@ -110,8 +116,8 @@ return [
     'passwords' => [
         'users' => [
             'provider' => 'users',
-            'table' => env('AUTH_PASSWORD_RESET_TOKEN_TABLE', 'password_reset_tokens'),
-            'expire' => 60,
+            'table'    => env('AUTH_PASSWORD_RESET_TOKEN_TABLE', 'password_reset_tokens'),
+            'expire'   => 60,
             'throttle' => 60,
         ],
     ],

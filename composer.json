@@ -16,6 +16,7 @@
         "red-jasmine/address": "1.0.x-dev",
         "red-jasmine/admin": "1.0.x-dev",
         "red-jasmine/card": "1.0.x-dev",
+        "red-jasmine/jwt-auth": "1.0.x-dev",
         "red-jasmine/shop": "1.0.x-dev",
         "red-jasmine/promotion": "1.0.x-dev",
         "red-jasmine/announcement": "1.0.x-dev",
