@@ -56,6 +56,10 @@ return [
             'driver'   => 'session',
             'provider' => 'admins',
         ],
+        'owner'=>[
+            'driver'   => 'jwt',
+            'provider' => 'owners',
+        ],
     ],
 
     /*
@@ -81,7 +85,7 @@ return [
             'model'  => env('AUTH_MODEL', \RedJasmine\User\Domain\Models\User::class),
         ],
 
-        'jwt' => [
+        'owners' => [
             'driver' => 'jwt',
             'models' => [
                 'user' => \RedJasmine\User\Domain\Models\User::class,
