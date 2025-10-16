@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 
 use App\Models\Tenant;
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Auth;
 use RedJasmine\Admin\Domain\Models\Admin;
 
 
@@ -29,6 +30,7 @@ class Test extends Command
      */
     public function handle()
     {
+
 
 
         //
