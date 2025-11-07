@@ -23,29 +23,27 @@ use RedJasmine\FilamentCoupon\FilamentCouponPlugin;
 use RedJasmine\FilamentLogistics\FilamentLogisticsPlugin;
 use RedJasmine\FilamentOrder\FilamentOrderPlugin;
 use RedJasmine\FilamentProduct\FilamentProductPlugin;
+use RedJasmine\FilamentRegion\FilamentRegionPlugin;
 use RedJasmine\FilamentUser\FilamentUserPlugin;
 use Stancl\Tenancy\Middleware\InitializeTenancyByDomainOrSubdomain;
 
 class AdminPanelProvider extends \RedJasmine\FilamentCore\Panel\PanelProvider
 {
 
+
     public function panel(Panel $panel) : Panel
     {
-        $panel = parent::panel($panel);
+        $panel
+            ->id('admin')
+            ->path('admin');
+
+        static::configure($panel);
+
         return $panel
             ->colors([
                 'primary' => Color::Amber,
             ])
-            //->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
-            //->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
-            //->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\\Filament\\Widgets')
             ->authGuard('admin-panel')
-            ->middleware([
-                'universal',
-                InitializeTenancyByDomainOrSubdomain::class,
-                //PreventAccessFromCentralDomains::class,
-            ], isPersistent: true)
-            ->sidebarWidth('10rem')
             ->plugins([
                 // FilamentUserPlugin::make(),
                 FilamentProductPlugin::make(),
@@ -55,8 +53,7 @@ class AdminPanelProvider extends \RedJasmine\FilamentCore\Panel\PanelProvider
                 FilamentArticlePlugin::make(),
                 FilamentLogisticsPlugin::make(),
                 FilamentCouponPlugin::make(),
-
-
+                FilamentRegionPlugin::make(),
             ]);
     }
 
