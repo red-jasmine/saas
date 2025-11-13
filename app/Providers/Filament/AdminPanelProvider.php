@@ -40,6 +40,7 @@ class AdminPanelProvider extends \RedJasmine\FilamentCore\Panel\PanelProvider
         static::configure($panel);
 
         return $panel
+            ->brandName('RedJasmineShop')
             ->colors([
                 'primary' => Color::Amber,
             ])
