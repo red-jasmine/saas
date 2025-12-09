@@ -19,12 +19,15 @@ use Illuminate\View\Middleware\ShareErrorsFromSession;
 use RedJasmine\FilamentArticle\FilamentArticlePlugin;
 use RedJasmine\FilamentCard\FilamentCardPlugin;
 use RedJasmine\FilamentCommunity\FilamentCommunityPlugin;
+use RedJasmine\FilamentCore\Pages\EmojiIconsPage;
 use RedJasmine\FilamentCoupon\FilamentCouponPlugin;
 use RedJasmine\FilamentLogistics\FilamentLogisticsPlugin;
+use RedJasmine\FilamentMarket\FilamentMarketPlugin;
 use RedJasmine\FilamentOrder\FilamentOrderPlugin;
 use RedJasmine\FilamentProduct\FilamentProductPlugin;
 use RedJasmine\FilamentRegion\FilamentRegionPlugin;
 use RedJasmine\FilamentUser\FilamentUserPlugin;
+use RedJasmine\FilamentWarehouse\FilamentWarehousePlugin;
 use Stancl\Tenancy\Middleware\InitializeTenancyByDomainOrSubdomain;
 
 class AdminPanelProvider extends \RedJasmine\FilamentCore\Panel\PanelProvider
@@ -44,6 +47,9 @@ class AdminPanelProvider extends \RedJasmine\FilamentCore\Panel\PanelProvider
             ->colors([
                 'primary' => Color::Amber,
             ])
+            ->pages([
+                EmojiIconsPage::class,
+            ])
             ->authGuard('admin-panel')
             ->plugins([
                 // FilamentUserPlugin::make(),
@@ -55,6 +61,9 @@ class AdminPanelProvider extends \RedJasmine\FilamentCore\Panel\PanelProvider
                 FilamentLogisticsPlugin::make(),
                 FilamentCouponPlugin::make(),
                 FilamentRegionPlugin::make(),
+                FilamentWarehousePlugin::make(),
+                FilamentWarehousePlugin::make(),
+                FilamentMarketPlugin::make(),
             ]);
     }
 
