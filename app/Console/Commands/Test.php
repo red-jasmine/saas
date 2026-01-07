@@ -7,6 +7,7 @@ use App\Models\Tenant;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Auth;
 use RedJasmine\Admin\Domain\Models\Admin;
+use RedJasmine\User\Domain\Models\User;
 
 
 class Test extends Command
@@ -30,6 +31,13 @@ class Test extends Command
      */
     public function handle()
     {
+
+        User::create([
+            'name'=>'18888888888',
+            'mobile'=>'18888888888',
+            'password'=>'18888888888',
+        ]);
+        dd();
 
 
 

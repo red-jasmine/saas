@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
-use RedJasmine\Region\Domain\Models\Region;
+
 use Stancl\JobPipeline\JobPipeline;
 use Stancl\Tenancy\Events;
 use Stancl\Tenancy\Jobs;
@@ -119,14 +119,15 @@ class TenancyServiceProvider extends ServiceProvider
         });
 
 
-        $centralModels = [
-            Region::class,
-        ];
-
-
-        foreach ($centralModels as $model) {
-            $model::setDefaultConnection(config('tenancy.database.central_connection'));
-        }
+        //  TODO 设置基础服务的链接
+        // $centralModels = [
+        //     Region::class,
+        // ];
+        //
+        //
+        // foreach ($centralModels as $model) {
+        //     $model::setDefaultConnection(config('tenancy.database.central_connection'));
+        // }
 
 
     }

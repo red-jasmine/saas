@@ -3,15 +3,13 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use RedJasmine\Admin\Domain\Models\Permission;
-use RedJasmine\Admin\Domain\Models\Role;
 
 class AppServiceProvider extends ServiceProvider
 {
     /**
      * Register any application services.
      */
-    public function register(): void
+    public function register() : void
     {
         //
     }
@@ -19,10 +17,8 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      */
-    public function boot(): void
+    public function boot() : void
     {
 
-
-        //
     }
 }

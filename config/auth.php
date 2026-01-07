@@ -80,6 +80,10 @@ return [
     */
 
     'providers' => [
+        'base-user' => [
+            'driver' => 'eloquent',
+            'model'  => env('AUTH_MODEL', \RedJasmine\User\Domain\Models\User::class),
+        ],
         'users' => [
             'driver' => 'eloquent',
             'model'  => env('AUTH_MODEL', \RedJasmine\User\Domain\Models\User::class),
