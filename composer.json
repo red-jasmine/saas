@@ -90,14 +90,14 @@
     "repositories": [
         {
             "type": "path",
-            "url": "../framework/filament/*",
+            "url": "./../framework/filament/*",
             "options": {
                 "symlink": true
             }
         },
         {
             "type": "path",
-            "url": "../framework/packages/*",
+            "url": "./../framework/packages/*",
             "options": {
                 "symlink": true
             }

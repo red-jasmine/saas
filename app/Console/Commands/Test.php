@@ -32,12 +32,6 @@ class Test extends Command
     public function handle()
     {
 
-        User::create([
-            'name'=>'18888888888',
-            'mobile'=>'18888888888',
-            'password'=>'18888888888',
-        ]);
-        dd();
 
 
 
@@ -45,7 +39,7 @@ class Test extends Command
         Admin::create([
             'email'=>'admin@qq.com',
             'name'=>'super_admin',
-            'password'=>'123456'
+            'password'=>'admin'
         ]);
         return;
 
