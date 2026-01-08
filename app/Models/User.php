@@ -9,9 +9,10 @@ use Filament\Panel;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use RedJasmine\Support\Contracts\UserInterface;
+use RedJasmine\Support\Domain\Contracts\UserInterface;
 
-class User extends \RedJasmine\User\Domain\Models\User implements HasName,UserInterface,FilamentUser
+
+class User extends Authenticatable implements HasName,UserInterface,FilamentUser
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
@@ -28,6 +29,15 @@ class User extends \RedJasmine\User\Domain\Models\User implements HasName,UserIn
         'remember_token',
     ];
 
+    public function getUserData() : array
+    {
+        return [
+            'type'     => $this->getType(),
+            'id'       => $this->getID(),
+            'nickname' => $this->getNickname(),
+            'avatar'   => $this->getAvatar(),
+        ];
+    }
 
 
     public function canAccessPanel(Panel $panel) : bool
