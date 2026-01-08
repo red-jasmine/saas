@@ -4,6 +4,7 @@ namespace App\Providers\Filament;
 
 use BezhanSalleh\LanguageSwitch\LanguageSwitch;
 use Closure;
+use Filament\Pages\Dashboard;
 use Filament\Panel;
 use Filament\Support\Colors\Color;
 use RedJasmine\FilamentAddress\FilamentAddressPlugin;
@@ -36,6 +37,7 @@ class AdminPanelProvider extends \RedJasmine\FilamentCore\Panel\PanelProvider
             ])
             ->authGuard('admin-panel')
             ->pages([
+                Dashboard::class,
             ])
             ->plugins([
                 // FilamentUserPlugin::make(),
